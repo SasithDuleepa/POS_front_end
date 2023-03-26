@@ -2,6 +2,10 @@ import React from 'react'
 
 export default function Search() {
   return (
-    <div>Search</div>
+    <div>
+      <p>search employee</p>
+      <input className='employee_search' type='text'/>
+      
+    </div>
   )
 }

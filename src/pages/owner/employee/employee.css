@@ -6,3 +6,71 @@
     width: 500px;
     height: 50px;
 }
+
+.add_employee{
+    background-color: aqua;
+    width: 90%;
+    height: 40pc;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+.add_head{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+.add_lable{
+    margin-left: 15%;
+    margin-top: 1%;
+    font-weight: 500;
+}
+
+.add_input0{
+    margin-left: 8%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_input1{
+    margin-left: 7%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_input2{
+    margin-left: 3.5%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_input3{
+    margin-left: 5.9%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_input4{
+    margin-left: 6.5%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_input5{
+    margin-left: 4.9%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_input6{
+    margin-left: 4.5%;
+    margin-bottom: 3%;
+    width: 30pc;
+}
+.add_btn{
+    margin-left: 45%;
+    height: 2pc;
+    width: 6pc;
+    border-radius: 25px;
+    background-color: blue;
+}
+
+.employee_search{
+    width: 30pc;
+    border: solid 2px;
+
+}

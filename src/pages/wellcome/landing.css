@@ -1,0 +1,54 @@
+.Landing {
+  text-align: center;
+}
+.landing_frame1{
+    background-color: aqua;
+    width: 50%;
+    height: 30pc;
+    margin-left: 25%;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+.landing_wellcome{
+    font-size: 35px;
+    font-weight: 500;
+    
+}
+.landing_shopname{
+
+
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #234893 0%,
+    #9671bd 29%,
+    #d77998 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 70px;
+      font-weight: 600;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.pos_sys{
+    font-size: 30px;
+}
+.creator{
+    margin-top: 5pc;
+    font-size: 10px;
+}

@@ -16,8 +16,9 @@ export default function Landing() {
     }, [history]);
     console.log(history)
   return (
-    
+    <div className='landing'>
     <div className='landing_frame1'>
+      
        
 
         <p className='landing_wellcome'>Wellcome</p>
@@ -25,6 +26,7 @@ export default function Landing() {
         <p className='pos_sys'>POS system</p>
         <p className='creator'>powered by @sasith</p>
     
+    </div>
     </div>
   )
 }
