@@ -1,0 +1,8 @@
+.owner_employee{
+    display: flex;
+    justify-content: space-between;
+}
+.owner_employee_add,.owner_employee_search{
+    width: 500px;
+    height: 50px;
+}

@@ -1,0 +1,9 @@
+.stockkeeper_navs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.stockkeeper_navs1,.stockkeeper_navs2{
+    width: 500px;
+    height: 50px;
+}

@@ -1,0 +1,10 @@
+.owner_stores{
+    display: flex;
+    justify-content: space-between;
+
+}
+.owner_stores_search,.owner_stores_add{
+    width: 500px;
+    height: 50px;
+
+}
