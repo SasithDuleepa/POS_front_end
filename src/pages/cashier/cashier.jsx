@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {BrowserRouter as Router,Route, Switch} from "react-router-dom";
 import AddNew from './addNew'
 import Find from './find'
+import './cashier.css'
 
 class Cashier extends Component{
     constructor(props){

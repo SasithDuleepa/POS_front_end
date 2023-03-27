@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import Axios from 'axios';
 export default function Addnew() {
   const[data,setData]= useState({
     name:"",
@@ -16,8 +16,23 @@ export default function Addnew() {
     newdata[e.target.id]= e.target.value
     setData(newdata)        
  }
- const handlesubmit=(e)=>{
-    console.log(data)
+ const handlesubmit=async(e)=>{
+  e.preventDefault();
+  try{
+      const resp =await Axios.post('http://localhost:8080/users',{            
+          name:data.name,
+          email:data.email,
+          mobileNo:data.mobile,
+          address:data.address,
+          IdNo:data.Id,
+          password:data.password,
+          user:data.user
+      });
+     
+      console.log(resp.data)
+      // history.push("../v4u");
+  } catch(error){console.log(error);
+  } 
  }
   return (
     <div className='add_employee'>

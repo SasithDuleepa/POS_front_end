@@ -4,8 +4,19 @@
     margin-bottom: 10px;
 }
 .owner_navs1,.owner_navs2,.owner_navs3{
-    width: 300px;
+    width: 33.33%;
     height: 50px;
-    background-color: darkgray;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(234, 236, 240);
+    
 
 }
+.owner_navs1 { background-color: rgba(52, 52, 54, 0.721); }
+.owner_navs1:focus {background-color: rgb(52, 52, 54); }
+
+.owner_navs2 { background-color: rgba(52, 52, 54, 0.721); }
+.owner_navs2:focus {background-color: rgb(52, 52, 54); }
+
+.owner_navs3 { background-color: rgba(52, 52, 54, 0.721); }
+.owner_navs3:focus {background-color: rgb(52, 52, 54); }

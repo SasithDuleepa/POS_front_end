@@ -4,10 +4,17 @@
 
 }
 .owner_stores_search,.owner_stores_add{
-    width: 500px;
+    width: 50%;
     height: 50px;
 
 }
+
+.owner_stores_search{ background-color: rgba(52, 52, 54, 0.721); }
+.owner_stores_search:focus{ background-color: rgb(52, 52, 54); }
+
+.owner_stores_add { background-color: rgba(52, 52, 54, 0.721); }
+.owner_stores_add:focus {background-color: rgb(52, 52, 54); }
+
 .add_item{
     background-color: aqua;
     width: 80%;
