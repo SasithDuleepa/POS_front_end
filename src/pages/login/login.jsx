@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 export default function Login() {
     const history = useHistory();
     const url = "";
-    const[Response, setResponse]= useState("stock keeper")
+    const[Response, setResponse]= useState("cashier")
     const[loginLink, setLoginLink]= useState("/owner")
     const[data,setData]= useState({
         name:"",

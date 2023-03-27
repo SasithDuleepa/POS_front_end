@@ -1,0 +1,55 @@
+#head{
+    margin-left: 40%;
+    font-size: 20px;
+}
+.summery{
+    display: flex;
+    justify-content: space-around;
+}
+.table_frame{
+    
+    width:90%;
+    margin-left: 5%;
+    overflow: 'scroll';
+    background-color: aqua;
+}
+table{
+    color: blue;
+    margin-left: 5%;
+}
+.th_name{
+    width: 280px;
+}
+.th{
+    width: 200px;
+}
+.td_item_input{
+    margin-left: -50px;
+}
+
+
+.input{
+    margin-left: 2%;
+}
+.item_input{
+    width: 150px;
+}
+.qtn_input{
+    width: 150px;
+    margin-left: 10%;
+}
+.unitprice_input{
+    width: 150px;
+    margin-left: 7%;
+}
+.add{
+    margin-left: 5%;
+}
+.summerydata{
+    margin-left: 70%;
+}
+.submit_bill{
+    margin-left: 70%;
+    width: 10%;
+    height: 50px;
+}
