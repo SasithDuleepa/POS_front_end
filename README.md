@@ -1,13 +1,9 @@
-# Getting Started with Create React App
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## Online Point of Sale System
+# Online Point of Sale System
 
 This is an online point of sale system designed specifically for shopping center branches. It provides an easy way to analyze and control your business. With this system, you can manage your sales, inventory, customers, and employees all in one place.
+
+
 
 # Key Features
 
@@ -19,6 +15,8 @@ Reporting and analytics
 Future Developments
 In the future, we plan to add even more features to this system, including:
 
+
+
 # Multi-branch support
 
 Integration with popular payment gateways
@@ -27,6 +25,8 @@ Loyalty program management
 Mobile app support
 Getting Started
 To use this system, simply sign up for an account and follow the instructions to set up your store. You can then start managing your sales and inventory online, from anywhere in the world.
+
+
 
 # Feedback and Support
 
