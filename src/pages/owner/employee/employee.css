@@ -14,11 +14,12 @@
 
 
 .add_employee{
-    background-color: aqua;
-    width: 90%;
+    background-image: linear-gradient(to right,#66faff, #adfffe);
+    width: 60%;
     height: 40pc;
     margin-bottom: 10%;
-    margin-left: 5%;
+    margin-left: 20%;
+    border-radius: 10px;
 }
 .add_head{
     font-size: 30px;
@@ -74,6 +75,8 @@
     border-radius: 25px;
     background-color: blue;
 }
+
+
 
 .employee_search{
     width: 30pc;

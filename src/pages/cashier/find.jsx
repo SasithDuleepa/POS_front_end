@@ -1,33 +1,31 @@
 import React, { useState } from "react";
 import './find.css'
-
+import Axios from 'axios';
 
 export default function Find() {
 
-  const itemList = [
-    "Apple",
-    "Orange",
-    "Banana",
-    "Cherry",
-    "Milk",
-    "Peanuts",
-    "Butter",
-    "Tomato"
-  ];
+  const[itemList,SetEmployee]= useState([
+    "wefe",
+    "Affghj"
+   
+  ])
   
   const [filteredList, setFilteredList] = new useState(itemList);
   
-  const filterBySearch = (event) => {
+  const filterBySearch = async(event) => {
     // Access input value
     const query = event.target.value;
-    // Create copy of item list
-    var updatedList = [...itemList];
-    // Include all elements which includes the search query
-    updatedList = updatedList.filter((item) => {
-      return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-    });
-    // Trigger render with updated values
-    setFilteredList(updatedList);
+
+    event.preventDefault();
+    try{
+        const resp =await Axios.post('http://localhost:8080/bills/find',{            
+            name:query,
+               });
+        var respData = resp.data;   
+        console.log(query)   
+        SetEmployee(respData)
+    } catch(error){console.log(error);} 
+    
   };
 
   
@@ -40,7 +38,7 @@ export default function Find() {
       </div>
       <div id="item-list">
         <ol>
-          {filteredList.map((item, index) => (
+          {itemList.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ol>

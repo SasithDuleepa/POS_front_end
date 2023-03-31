@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import Axios from 'axios';
+
 import './store.css'
 export default function Addnew() {
   const[data,setData]= useState({
@@ -14,8 +16,19 @@ export default function Addnew() {
     setData(newdata)
 
   }
-  const submithandler = (e)=>{
-    console.log(data)
+  const submithandler = async(e)=>{
+    e.preventDefault();
+  try{
+      const resp =await Axios.post('http://localhost:8080/items',{            
+          item:data.itemName,
+          sale_price:data.rentalPrice,
+          taken_price:data.takenPrice,
+          quantity:data.quantity     });
+     
+      console.log(resp.data)
+      // history.push("../v4u");
+  } catch(error){console.log(error);
+  } 
 
   }
   return (

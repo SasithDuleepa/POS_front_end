@@ -9,7 +9,7 @@ import './owner.css'
 class Owner extends Component{
   constructor(props){
       super(props);
-      this.state = {message:<Store/>}
+      this.state = {message:<Employee/>}
   }
   updateContent_0 = () => {
       this.setState({ message:<Employee/>});
@@ -27,7 +27,7 @@ class Owner extends Component{
       return(
           <div>
             <div className='owner_navs'>
-          <button  className='owner_navs1' onClick={this.updateContent_0}>employee</button><br/>
+          <button  className='owner_navs1' active='true' onClick={this.updateContent_0}>employee</button><br/>
           <button className='owner_navs2' onClick={this.updateContent_1}> Stores</button><br/>
           <button className='owner_navs3' onClick={this.updateContent_2}> Summery</button><br/>
           </div>

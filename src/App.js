@@ -9,10 +9,12 @@ import Landing from './pages/wellcome/landing';
 import Owner from './pages/owner/owner';
 import StockKeeper from './pages/stock-keeper/stockKeeper';
 import Cashier from './pages/cashier/cashier';
+import Navibar from './components/navbar/navbar';
 
 function App() {
   return (
     <div className="App">
+      <Navibar/>
       <BrowserRouter>
       <Router>    
      <Switch>   

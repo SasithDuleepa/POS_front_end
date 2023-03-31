@@ -16,7 +16,7 @@
 .owner_stores_add:focus {background-color: rgb(52, 52, 54); }
 
 .add_item{
-    background-color: aqua;
+    background-image: linear-gradient(to right,#66faff, #adfffe);
     width: 80%;
     height: 30pc;
     margin-bottom: 10%;
@@ -45,7 +45,7 @@
     width: 25pc;
 }
 .srore_add{
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 3%;
     width: 110px;
     height: 40px;

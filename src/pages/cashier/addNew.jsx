@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './addNew.css'
-
-
+import moment from "moment";
+import Axios from 'axios';
 
 
 
 export default function AddNew() {
+
+    date_create: moment().format("DD-MM-YYYY hh:mm:ss")
+    let newDate = new Date()
   const[groceryItems, setGroceryItems]= useState([]);
 
   const[itemName,setItemName]= useState('');
@@ -57,14 +60,35 @@ export default function AddNew() {
       setTotalBillAmount(totalBillAmount - itemtoDelete.quantity*itemtoDelete.price);
 
     }
+    const handleclick=async()=>{
+        const date = moment().format("DD-MM-YYYY hh:mm:ss");
+        const billno=""
+        const user=""
+        console.log(groceryItems)
+
+      
+  try{
+      const resp =await Axios.post('http://localhost:8080/bills',{            
+          employee:"ytrhhy",
+          billnumber:'',
+          date:date,
+          bill:groceryItems,
+          
+      });
+     
+      console.log(resp.data)
+      // history.push("../v4u");
+  } catch(error){console.log(error);
+  } 
+    }
 
   return (
-    <div id="frame">
+    <div className="frame">
             
             <p id="head">billing</p>
             <div className="summery">            
-               <p className="summerydata">bill No.:</p>
-               <p className="summerydata">date :</p>
+               {/* <p className="summerydata">bill No.:</p> */}
+               <p className="summerydata">date : {moment().format("DD-MM-YYYY ")}</p>
                <p className="summerydata">user :</p>
             </div>
             
@@ -121,7 +145,7 @@ export default function AddNew() {
 
             <div id="footer">
             <h2 className="summerydata">Total Bill Amount: {totalBillAmount}</h2>
-            <button className='submit_bill'>submit</button>
+            <button className='submit_bill' onClick={handleclick}>submit</button>
             </div>
 
         </div>
