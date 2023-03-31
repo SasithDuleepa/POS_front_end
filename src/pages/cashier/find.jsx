@@ -4,13 +4,11 @@ import Axios from 'axios';
 
 export default function Find() {
 
-  const[itemList,SetEmployee]= useState([
-    "wefe",
-    "Affghj"
+  const[billList,SetEmployee]= useState([
    
   ])
   
-  const [filteredList, setFilteredList] = new useState(itemList);
+  const [filteredList, setFilteredList] = new useState(billList);
   
   const filterBySearch = async(event) => {
     // Access input value
@@ -19,7 +17,7 @@ export default function Find() {
     event.preventDefault();
     try{
         const resp =await Axios.post('http://localhost:8080/bills/find',{            
-            name:query,
+            billname:query,
                });
         var respData = resp.data;   
         console.log(query)   
@@ -38,7 +36,7 @@ export default function Find() {
       </div>
       <div id="item-list">
         <ol>
-          {itemList.map((item, index) => (
+          {billList.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ol>

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Axios from 'axios';
 export default function FindItem() {
-  const[itemList,SetEmployee]= useState([
-    "wefe",
-    "Affghj"
+  const[itemList,SetIteme]= useState([
+   
    
   ])
   
@@ -19,10 +18,10 @@ export default function FindItem() {
     event.preventDefault();
   try{
       const resp =await Axios.post('http://localhost:8080/items/find',{            
-          name:query,
+          itemname:query,
              });
       var respData = resp.data;      
-      SetEmployee(respData)
+      SetIteme(respData)
   } catch(error){console.log(error);} 
 
 

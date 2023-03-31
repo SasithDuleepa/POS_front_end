@@ -88,8 +88,8 @@ export default function AddNew() {
             <p id="head">billing</p>
             <div className="summery">            
                {/* <p className="summerydata">bill No.:</p> */}
-               <p className="summerydata">date : {moment().format("DD-MM-YYYY ")}</p>
-               <p className="summerydata">user :</p>
+               {/* <p className="summerydata">date : {moment().format("DD-MM-YYYY ")}</p> */}
+               
             </div>
             
             {/* <div id="input">

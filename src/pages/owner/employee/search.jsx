@@ -1,21 +1,15 @@
 import React, { useState } from "react";
 import Axios from 'axios';
 export default function FindItem() {
-  const[itemList,SetEmployee]= useState([
-    "wefe",
-    "Affghj"
+  const[nameList,SetEmployee]= useState([
    
   ])
   
-  const [filteredList, setFilteredList] = new useState(itemList);
+  const [filteredList, setFilteredList] = new useState(nameList);
   
   const filterBySearch = async(event) => {
    
     const query = event.target.value;
-     
-    
-
-
     event.preventDefault();
   try{
       const resp =await Axios.post('http://localhost:8080/users/find',{            
@@ -37,7 +31,7 @@ export default function FindItem() {
       </div>
       <div id="item-list">
         <ol>
-          {itemList.map((item, index) => (
+          {nameList.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ol>
