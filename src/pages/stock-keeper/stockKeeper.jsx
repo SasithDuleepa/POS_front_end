@@ -20,11 +20,12 @@ class StockKeeper extends Component{
       } 
      
       render(){
+        console.log(this.state.message.type.name)
         return(
             <div className='stockkeeper'>
             <div className='stockkeeper_navs'>
-            <button  className='stockkeeper_navs1' onClick={this.updateContent_0}>Add item</button><br/>
-            <button className='stockkeeper_navs2' onClick={this.updateContent_1}> Find item</button><br/>
+            <button   className={this.state.message.type.name==="Add_item"?"active-sk":"sk-default"} onClick={this.updateContent_0}>Add item</button><br/>
+            <button className={this.state.message.type.name==="FindItem"?"active-sk":"sk-default"} onClick={this.updateContent_1}> Find item</button><br/>
             
             </div>
   

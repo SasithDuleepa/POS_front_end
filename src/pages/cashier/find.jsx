@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './find.css'
 import Axios from 'axios';
 
-export default function Find() {
+export default function Findbill() {
 
   const[billList,SetEmployee]= useState([
    

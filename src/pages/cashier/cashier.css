@@ -1,5 +1,10 @@
-.stockkeeper_navs1{ background-color: rgba(52, 52, 54, 0.721); }
-.stockkeeper_navs1:focus{ background-color: rgb(52, 52, 54); }
+.active-cashier,.cashier-default{
+    width: 50%;
+    height: 50px;
 
-.stockkeeper_navs2 { background-color: rgba(52, 52, 54, 0.721); }
-.stockkeeper_navs2:focus {background-color: rgb(52, 52, 54); }
+}
+
+.active-cashier{ background-color: rgba(86, 86, 193, 0.721); }
+
+
+.cashier-default { background-color: rgba(52, 52, 54, 0.721); }

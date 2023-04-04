@@ -19,11 +19,12 @@ class Employee extends Component{
           
       } 
       render(){
+        console.log(this.state.message.type.name)
         return(
             <div>
                 <div className='owner_employee'>
-            <button className='owner_employee_add' onClick={this.updateContent_0}>Add new employee</button><br/>
-            <button className="owner_employee_search" onClick={this.updateContent_1}> Searh employee</button><br/>
+            <button className={this.state.message.type.name==="Addnew"?"active-owner-employee":"owner-employee-default"} onClick={this.updateContent_0}>Add new employee</button><br/>
+            <button className={this.state.message.type.name==="FindItem"?"active-owner-employee":"owner-employee-default"} onClick={this.updateContent_1}> Searh employee</button><br/>
             </div>
 
             <Router>

@@ -3,7 +3,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.owner_navs1,.owner_navs2,.owner_navs3{
+.active-owner,.owner-default{
     width: 33.33%;
     height: 50px;
     font-size: 18px;
@@ -12,11 +12,9 @@
     
 
 }
-.owner_navs1 { background-color: rgba(52, 52, 54, 0.721); }
-.owner_navs1:focus {background-color: rgb(52, 52, 54); }
+.active-owner{background-color: rgb(29, 29, 168); }
 
-.owner_navs2 { background-color: rgba(52, 52, 54, 0.721); }
-.owner_navs2:focus {background-color: rgb(52, 52, 54); }
+.owner-default { background-color: rgba(52, 52, 54, 0.721); }
 
-.owner_navs3 { background-color: rgba(52, 52, 54, 0.721); }
-.owner_navs3:focus {background-color: rgb(52, 52, 54); }
+
+

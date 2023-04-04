@@ -5,7 +5,7 @@ import Axios from 'axios';
 
 
 
-export default function AddNew() {
+export default function AddNewbill() {
 
     date_create: moment().format("DD-MM-YYYY hh:mm:ss")
     let newDate = new Date()

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Axios from 'axios';
 
 import './store.css'
-export default function Addnew() {
+export default function Addnewitem() {
   const[data,setData]= useState({
     itemName:"",
     rentalPrice:"",

@@ -24,12 +24,13 @@ class Owner extends Component{
       
   }
     render(){
+    
       return(
           <div>
             <div className='owner_navs'>
-          <button  className='owner_navs1' active='true' onClick={this.updateContent_0}>employee</button><br/>
-          <button className='owner_navs2' onClick={this.updateContent_1}> Stores</button><br/>
-          <button className='owner_navs3' onClick={this.updateContent_2}> Summery</button><br/>
+          <button  className={this.state.message.type.name==="Employee"?"active-owner":"owner-default"} active={true} onClick={this.updateContent_0}>employee</button><br/>
+          <button className={this.state.message.type.name==="Store"?"active-owner":"owner-default"} onClick={this.updateContent_1}> Stores</button><br/>
+          <button className={this.state.message.type.name==="Summery"?"active-owner":"owner-default"} onClick={this.updateContent_2}> Summery</button><br/>
           </div>
 
           <Router>

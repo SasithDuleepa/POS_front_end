@@ -3,17 +3,17 @@
     justify-content: space-between;
 
 }
-.owner_stores_search,.owner_stores_add{
+.active-stores-item,.default-stores-search{
     width: 50%;
     height: 50px;
 
 }
 
-.owner_stores_search{ background-color: rgba(52, 52, 54, 0.721); }
-.owner_stores_search:focus{ background-color: rgb(52, 52, 54); }
+.active-stores-item{ background-color: rgba(28, 28, 163, 0.721); }
 
-.owner_stores_add { background-color: rgba(52, 52, 54, 0.721); }
-.owner_stores_add:focus {background-color: rgb(52, 52, 54); }
+
+.default-stores-search { background-color: rgba(52, 52, 54, 0.721); }
+
 
 .add_item{
     background-image: linear-gradient(to right,#66faff, #adfffe);
