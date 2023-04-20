@@ -1,5 +1,5 @@
 
-# Online Point of Sale System
+# Point of Sale System
 
 This is an online point of sale system designed specifically for shopping center branches. It provides an easy way to analyze and control your business. With this system, you can manage your sales, inventory, customers, and employees all in one place.
 
